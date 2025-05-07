@@ -2,6 +2,8 @@
 
 **Wind Down** is a night routine assistant app designed to help users relax, reflect, and build healthier nighttime habits through journaling, meditation sounds, and personalized sleep insights.
 
+[View Demo](https://youtube.com/shorts/5aUiQHTa1h4?feature=share)
+
 ---
 
 ## Features
@@ -36,7 +38,7 @@ These metrics power personalized sleep insights like:
 ## Mockups
 
 Figma design:  
-🔗 [View Initial Mockups](https://www.figma.com/design/mRb8cN2e4ahFwJpXt6OuMl/Wind-Down-app?node-id=0-1&t=AhmAn0A5dE8h6mmM-1)
+[View Initial Mockups](https://www.figma.com/design/mRb8cN2e4ahFwJpXt6OuMl/Wind-Down-app?node-id=0-1&t=AhmAn0A5dE8h6mmM-1)
 
 ---
 
@@ -66,4 +68,5 @@ Wind Down was originally developed as a term project for an iOS Development cour
 
 - **Scheduled Notifications**: Enable customizable push notifications to remind users when it's time to wind down, encouraging consistent sleep habits. Use alternating messages, possibly integrated with the insight message.
 
-- **App Store Deployment**: I'm exploring the possibility of polishing and publishing Wind Down on the App Store. I'd love to make it accessible to others seeking a peaceful end to their day.
+- **Upgrade UI**: I enjoy the current UI but I'd like to upgrade it to feel less primitive.
+
