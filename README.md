@@ -3,6 +3,7 @@
 **Wind Down** is a night routine assistant app designed to help users relax, reflect, and build healthier nighttime habits through journaling, meditation sounds, and personalized sleep insights.
 
 [View Demo](https://youtube.com/shorts/5aUiQHTa1h4?feature=share)
+*Demo does not include audio. To hear meditative sound feature, clone and run on XCode*
 
 ---
 
