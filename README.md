@@ -33,10 +33,10 @@ These metrics power personalized sleep insights like:
 
 ---
 
-## Wireframes
+## Mockups
 
 Figma design:  
-🔗 [View Wireframes](https://www.figma.com/design/mRb8cN2e4ahFwJpXt6OuMl/Wind-Down-app?node-id=0-1&t=AhmAn0A5dE8h6mmM-1)
+🔗 [View Initial Mockups](https://www.figma.com/design/mRb8cN2e4ahFwJpXt6OuMl/Wind-Down-app?node-id=0-1&t=AhmAn0A5dE8h6mmM-1)
 
 ---
 
@@ -47,25 +47,23 @@ Figma design:
 
 ---
 
-## Future Developments
+## Remaining Bug Fixes
+- **Tab Bar Background**: The navigation tab bar background becomes white when viewing the PastEntries. This may be caused by the view and stack layering, so the fix would involve relayering the stacks so the navigation background stays transparent.
+  
+- **Card Inconsistency**: The card views in the Past Entries list are not a consistent width. Instead, the width is dependent on the content of the card. A potential fix would involve adjusting the padding in CustomCardView and PastEntriesView.
+
+---
+
+## Future Enhancements
 
 Wind Down was originally developed as a term project for an iOS Development course, but I plan to continue improving it. Some features I’d like to implement include:
 
 - **Home Screen Enhancements**: Make the home screen more engaging with visual mood elements, daily quotes, or ambient animations to set the tone for the night.
 
-- **Mood Recording in Journal**:  Add a mood recording feature that saves alongside journal entry. This would possibly require reworking how to journal entry is saved and decoded.
+- **Mood Recording in Journal**: Add a mood tagging feature to the journal entry. This would require updating the journal entry and views, and adjusting how the entry is stored and decoded.
 
 - **Settings Improvements**: Allow users to set a default city for weather insights, toggle between light and dark themes, and manage scheduled nightly reminders.
 
 - **Scheduled Notifications**: Enable customizable push notifications to remind users when it's time to wind down, encouraging consistent sleep habits. Use alternating messages, possibly integrated with the insight message.
 
-- **App Store Deployment**: I'm exploring the possibility of polishing and publishing Wind Down on the App Store. Even if it remains a personal project, I'd love to make it accessible to others seeking a peaceful end to their day.
-
----
-
-## Getting Started
-
-To run this project:
-1. Clone the repo
-2. Open the `.xcodeproj` file in Xcode
-3. Run the app on simulator or device
+- **App Store Deployment**: I'm exploring the possibility of polishing and publishing Wind Down on the App Store. I'd love to make it accessible to others seeking a peaceful end to their day.
