@@ -1,9 +1,7 @@
-//
 //  SoundViewModel.swift
 //  WindDown
-//
 //  Created by Lauren Galarza on 12/8/24.
-//
+//  Model for SoundView that contains sound data and handles toggling.
 
 import Foundation
 import SwiftUI
@@ -31,9 +29,6 @@ class SoundViewModel: ObservableObject {
     ]
 
 
-
-    
-    
     func toggleSound (sound: SoundEntry){
         //play audio tapped on
             //find audio file
@@ -53,9 +48,9 @@ class SoundViewModel: ObservableObject {
                 player = try AVAudioPlayer(contentsOf: url)
                
                 player?.play()
-                player?.numberOfLoops = -1
-                currentlyPlaying = sound.id
-                isPlaying = true
+                player?.numberOfLoops = -1  //continuous loop until toggled off
+                currentlyPlaying = sound.id //set current sound
+                isPlaying = true    //set isPlaying state
 
             }
             else{

@@ -1,9 +1,7 @@
-//
 //  CustomModifiers.swift
 //  WindDown
-//
 //  Created by Lauren Galarza on 12/9/24.
-//
+//  Defines custom viewmodiers, including ButtonStyle
 
 import Foundation
 import SwiftUI

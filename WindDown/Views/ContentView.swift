@@ -48,8 +48,6 @@ struct ContentView: View {
                 
                 
             }
-        
-
             .environmentObject(pastEntriesViewModel)
             
     }

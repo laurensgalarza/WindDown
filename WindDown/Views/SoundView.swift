@@ -13,7 +13,6 @@ struct SoundView: View {
     @StateObject private var viewModel = SoundViewModel()
 
     var body: some View {
-
         
         ZStack{
             
@@ -30,7 +29,7 @@ struct SoundView: View {
                 .padding()
                 .shadow( radius: 2, y: 5)
                
-
+            //instruction
             Rectangle()
                 .fill(Color.soundsAccent3)
                 .shadow( radius: 2, y: 5)
@@ -47,59 +46,45 @@ struct SoundView: View {
                 
                   
 
-               
+            //list to play sounds
             List(viewModel.sounds) { sound in
                     //sound name
                     HStack{
                         
                         Text(sound.name) // Display each sound's name
-                            
                                 .font(Font.custom("Jaro", size: UIFont.preferredFont(forTextStyle: .title3).pointSize))
                                 .foregroundStyle(Color.soundsAccent3)
                             
-                               
-                            
-                            //if playing, display text "playing"
-                            Spacer()
+                        Spacer()
                         
+                        //if playing, display text "playing"
                         if viewModel.currentlyPlaying == sound.id {
                                 Text("Playing")
                                     .font(Font.custom("Jaro", size: UIFont.preferredFont(forTextStyle: .caption1).pointSize))
                                     .foregroundStyle(Color.soundsAccent3)
-                                    
-                                    
                             }
-                    }
+                        }
                         .contentShape(Rectangle())
                         .listRowBackground(Color.soundsAccent1)
                         .listRowSpacing(20)
                         .listRowSeparatorTint(Color.soundsAccent2)
-                    
+                        
+                        //tap to toggle sound
                         .onTapGesture {
-                                       
                             viewModel.toggleSound(sound: sound)
                                    }
                        
                    }
                     .scrollContentBackground(.hidden) // Hide default list background
                     .listStyle(.plain) // Use plain list style
-
-                    
                     .padding(.vertical, 5) // Space around each row
                 }
-            
                       
             }
-           
 
     }
-                    
-    
    
 }
-
-
-
 
 #Preview {
     SoundView()

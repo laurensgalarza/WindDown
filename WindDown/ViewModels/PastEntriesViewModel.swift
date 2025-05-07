@@ -1,9 +1,7 @@
-//
 //  PastEntriesViewModel.swift
 //  WindDown
-//
 //  Created by Lauren Galarza on 12/8/24.
-//
+//  Model for PastEntriesView that handles loading and deleting saved journal entries
 
 import Foundation
 import SwiftUI
@@ -26,15 +24,15 @@ class PastEntriesViewModel: ObservableObject {
         loadEntries()
     }
     
-
+    //separates entries that were concatonated together and stored in storedEntries
     func loadEntries(){
-        //separate entries that were concatonated together and stored in storedEntries
         
         journalHistory = []
         
+        //extract individual entry by spliting using main separator "||"
         let entryString = storedEntries.split(separator: separator).map(String.init)
 
-        
+        //for each entry, extract each component: data, text using separator"|"
         for entryString in entryString {
             let components = entryString.split(separator: "|", maxSplits: 1).map(String.init)
             
@@ -51,6 +49,7 @@ class PastEntriesViewModel: ObservableObject {
 
     }
     
+    //obtains current entry from JournalView and saves it to journalHistory in PastEntryView
     func saveEntry(_ entry: JournalEntry) {
         
     
@@ -68,7 +67,7 @@ class PastEntriesViewModel: ObservableObject {
     
     
     
-    
+    //deletes entry from journalhistory
     func deleteEntry(_ entry: JournalEntry) {
         if let i =  journalHistory.firstIndex(where: {$0.id == entry.id}) {
             

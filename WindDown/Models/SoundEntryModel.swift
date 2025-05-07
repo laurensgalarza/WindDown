@@ -1,9 +1,8 @@
-//
 //  SoundEntryModel.swift
 //  WindDown
-//
 //  Created by Lauren Galarza on 12/9/24.
-//
+//  Model for Sound Entry used in SoundViewModel
+
 import Foundation
 import SwiftUI
 import AVFoundation

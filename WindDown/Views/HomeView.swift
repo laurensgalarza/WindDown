@@ -13,19 +13,13 @@ struct HomeView: View {
     
     
     var body: some View {
-        
- 
-        
-            
+       
         ZStack{
             Color.homeBackground
                 .edgesIgnoringSafeArea(.all)
-            
-            
+       
             VStack{
-                
-                
-                
+       
                 Text("Wind Down")
                     .font(Font.custom("Jaro", size: 64))
                     .foregroundStyle(Color.titleText)
@@ -53,7 +47,6 @@ struct HomeView: View {
                     .padding(.top, -20)
          
 
-
             }
             .onAppear {
                 
@@ -65,22 +58,12 @@ struct HomeView: View {
                 
             }
 
-            // .padding()
-            
-            
-            
         }
-
-
-       
-          
-                    
+             
     }
                 
 }
         
-
-
 
 #Preview {
     HomeView()
