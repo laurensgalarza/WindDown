@@ -77,7 +77,10 @@ struct JournalView: View {
                         .frame(maxHeight: 0.5)
                     
                     //navigate to PastEntries VIew
-                    NavigationLink(destination: PastEntriesView()){
+                    NavigationLink(destination:
+                                    NavigationStack{
+                        PastEntriesView()}
+                    ){
                         Rectangle()
                             .fill(Color.journalViewBackground)
                             .frame(maxHeight: 50)

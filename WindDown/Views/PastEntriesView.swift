@@ -12,6 +12,8 @@ struct PastEntriesView: View {
 
         ZStack{
             
+            Color.journalButtonBackground.ignoresSafeArea()
+            
             VStack{
                 Text("Past Entries")
                     .foregroundStyle(Color.journalAccent1)
@@ -47,6 +49,7 @@ struct PastEntriesView: View {
                 .listStyle(.plain) // Use plain list style
                 .background(Color.journalButtonBackground)
                 //.background(Color.journalAccent2)
+                .scrollContentBackground(.hidden)
                 
             }
             .background(Color.journalButtonBackground)
